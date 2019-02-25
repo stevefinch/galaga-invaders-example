@@ -6,6 +6,7 @@ class Ship
   WIDTH = 100
   HEIGHT = 100
   DEFAULT_VELOCITY = 5
+  MISSILE_SPEED = -10
 
   attr_accessor :location
 
@@ -32,6 +33,10 @@ class Ship
   def to_s
     "✈️ (#{location})"
   end
+
+  def missile_speed 
+    MISSILE_SPEED
+  end  
 
   private
 
