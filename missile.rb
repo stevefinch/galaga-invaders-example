@@ -1,12 +1,13 @@
 class Missile < Structure
+  include Attacker
+  include Moveable
 
   def initialize(args)
     super
     @sprite = args.fetch[:sprite]
   end
 
-  def draw
-    # Draws the `sprite` at `location`
+  def sprite
+    @sprite = args.fetch[:sprite]
   end
-
 end
